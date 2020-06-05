@@ -15,7 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, foreign_key: true|
+|name|string|null: false|
 
 ### Association
 - has_many :groups_users
@@ -26,8 +26,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|null: false, foreign_key: true|
-|email|string|null: false|
+|name|string|index:true,null: false|
+|email|string|null: false, unique: true|
 |pass|string|null:false|
 
 ### Association
@@ -39,8 +39,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|
-|image||
+|text|text|-------|
+|image|text|-------|
 
 ### Association
 - belongs_to :group
