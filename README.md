@@ -15,7 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|references|null: false, foreign_key: true|
 
 ### Association
 - has_many :groups_users
@@ -26,7 +26,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|index:true,null: false|
+|name|references|index:true,null: false, foreign_key: true|
 |email|string|null: false, unique: true|
 |pass|string|null:false|
 
