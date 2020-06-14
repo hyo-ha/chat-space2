@@ -1,0 +1,85 @@
+.chat-main {
+  width: calc(100vw - 300px);
+  height: 100vh;
+  background-color: $white;
+  .chat-main__group-info {
+    padding: 0 40px;
+    height: 100px;
+    background-color: $white;
+    border-bottom: solid 1px $border_line;
+    display: flex;
+    justify-content: space-between;
+    .group-name {
+      color: $text_gray;
+      font-size: 20px;
+      margin-top: 35px;
+    }
+    .member-list {
+      color: $light_gray;
+      display: flex;
+      font-size: 12px;
+      margin-top: 15px;
+      .member {
+        padding-right: 5px;
+        font-size: 13px;
+      }
+    }
+    .edit-btn {
+      display: block;
+      border: 1px solid $light_blue;
+      height: 40px;
+      line-height: 40px;
+      margin-top: 28px;
+      padding: 0 20px;
+      &__info {
+        text-decoration: none;
+        color: $light_blue;
+      }
+    }
+  }
+  .chat-main__message-list {
+    height: calc(100vh - 100px - 90px);
+    background-color: $chat_main;
+  }
+
+  // フォーム部分
+  .chat-main__message-form {
+    height: 90px;
+    background-color: $form_submit;
+    padding: 20px 50px 20px 40px;
+    box-sizing: border-box;
+    .form {
+      display: flex;
+      justify-content: space-between;
+      .contents {
+        width: 100%;
+        background-color: $white;
+        position: relative;
+        .inputcontent {
+          border: none;
+          height: 50px;
+          width: 100%;
+          padding: 0 45px 0 15px;
+        }
+        .input-image {
+          height: 50px;
+          position: absolute;
+          right: 10px;
+          .fas {
+            line-height: 50px;
+            font-size: 25px;
+          }
+        }
+      }
+      .submit {
+        background-color: $light_blue;
+        border: none;
+        color: $white;
+        font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
+      }
+    }
+  }
+}
