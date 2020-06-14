@@ -15,6 +15,7 @@
     .form
       .contents
         %input.inputcontent{name:"message", type:"text", placeholder:  "type a message" }
-        %label{class:"input-image"}
+        %label{class:"input-image"} 
           = icon('fas','image')
+          %input.hidden{type: "file"}
       %input.submit{type: "submit", name: "commit", value:"Send"}
