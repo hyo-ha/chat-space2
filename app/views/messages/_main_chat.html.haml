@@ -1,0 +1,21 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__grup
+      .group-name 
+        sss
+      .member-list
+        Member：
+        %li.member
+          sss
+    .edit-btn
+      =link_to "#" , class: "edit-btn__info" do
+        Edit
+  .chat-main__message-list
+  .chat-main__message-form
+    .form
+      .contents
+        %input.inputcontent{name:"message", type:"text", placeholder:  "type a message" }
+        %label{class:"input-image"} 
+          = icon('fas','image')
+          %input.hidden{type: "file"}
+      %input.submit{type: "submit", name: "commit", value:"Send"}
