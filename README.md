@@ -26,7 +26,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|references|index:true,null: false, foreign_key: true|
+|name|string|index:true,null: false, foreign_key: true,unique: true|
 |email|string|null: false, unique: true|
 |pass|string|null:false|
 
