@@ -1,13 +1,14 @@
 .side-bar
   .side-bar__user-name
     .top-items
-      .top-items__name sss
+      .top-items__name
+        = current_user.name
       .top-items__icons
         %li.top-items__edit-user
           =link_to "#" do
             = icon('fas', 'edit')
         %li.top-items__new-group
-          =link_to "#" do
+          =link_to edit_user_path(current_user) do
             =icon('fas','cog')
   .group
     .side-bar__group-list
