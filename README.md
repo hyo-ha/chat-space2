@@ -1,11 +1,11 @@
 # README
 
-## groups_usersテーブル
+## group_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references|null: false, foreign_key: true|
-|group_id|references|null: false, foreign_key: true|
+|user_id|references| foreign_key: true|
+|group_id|references| foreign_key: true|
 
 ### Association
 - belongs_to :group
@@ -15,7 +15,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|references|null: false, foreign_key: true|
+|name|string|null: false, foreign_key: true|
 
 ### Association
 - has_many :groups_users

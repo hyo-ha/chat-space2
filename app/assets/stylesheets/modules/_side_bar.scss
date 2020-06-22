@@ -40,16 +40,21 @@
     background-color: $side_blue_light;
     height: calc(100vh - 100px);
     padding: 0 20px;
+    .group-list {
+      padding: 20px 0 40px;
+      box-sizing: border-box;
+      .group-name {
+        font-size: 15px;
+        color: $white;
+      }
+      .group-message {
+        font-size: 11px;
+        margin-top: 5px;
+        color: $white;
+      }
+    }
   }
-  &__group-list {
-    padding: 20px 0 40px;
-    box-sizing: border-box;
-  }
-  &__group-name {
-    font-size: 15px;
-  }
-  &__message {
-    font-size: 11px;
-    margin-top: 5px;
-  }
+  
+  
+  
 }
