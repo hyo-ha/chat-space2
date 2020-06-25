@@ -46,14 +46,12 @@
   .chat-main__message-form {
     height: 90px;
     background-color: $form_submit;
-    padding: 20px 50px 20px 40px;
-    box-sizing: border-box;
-    .form {
+    padding: 20px 40px;
+    .Form {
       display: flex;
-      justify-content: space-between;
+      width: 100%;
       .contents {
         width: 100%;
-        background-color: $white;
         position: relative;
         .inputcontent {
           border: none;
@@ -65,7 +63,7 @@
           height: 50px;
           position: absolute;
           right: 10px;
-          .fas {
+          .far {
             line-height: 50px;
             font-size: 25px;
           }
