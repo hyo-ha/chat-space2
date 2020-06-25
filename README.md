@@ -39,8 +39,10 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|-------|
-|image|text|-------|
+|content|string|-------|
+|image|string|-------|
+|group|references|foreign_key: true|
+|user|references|foreign_key: true|
 
 ### Association
 - belongs_to :group
