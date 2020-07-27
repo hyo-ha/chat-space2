@@ -40,6 +40,7 @@
   .chat-main__message-list {
     height: calc(100vh - 100px - 90px);
     background-color: $chat_main;
+    overflow: scroll;
   }
 
   // フォーム部分
